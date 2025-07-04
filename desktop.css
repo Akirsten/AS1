@@ -1,0 +1,29 @@
+nav {
+    grid-area: nav;
+    background-color: honeydew;
+}
+
+header {
+    grid-area: header; 
+    background-color: hotpink;
+    padding: 1em;
+    color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(249, 138, 197);
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lavender;
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(194, 153, 214);
+    color: white;
+}
