@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
     display: grid;
     grid-template-columns: 100%;
@@ -6,15 +9,49 @@ body {
     "header "
     "nav "
     "main"
-    "aside"
+    "button"
     "footer"
     ;
+    margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.showNav {
-    height: 0.8em;
-    width: 1.25em;
-    display: block;
-    border-top: 0.2em solid white;
-    border-bottom: 0.2em solid white;
+ button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #cab3b37c;
+        background: #ebafd0b4;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(255, 255, 255, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      
+button:hover{
+background-color: #f09fc562;
+color: black;
+border: 1px solid #000000
+}
+
+footer {
+  flex-shrink: 0; /* prevent footer from shrinking */
+  background: #f8f8f8;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align: center;
+    tex
 }
