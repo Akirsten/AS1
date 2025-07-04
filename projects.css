@@ -43,45 +43,7 @@ nav ul li a:hover {
  
 }
 
-.image-container {
-  margin: 2rem 0 1rem;
-  text-align: center;
-}
 
-.image-container img {
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.image-text {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #666;
-}
-
-  button {
-        display: block;
-        margin: 20px auto;
-        border: 1px solid #cab3b37c;
-        background: #ebafd0b4;
-        color: #fff;
-        font-family: "Raleway", sans-serif;
-        font-size: 16px;
-        line-height: 22px;
-        padding: 16px 24px;
-        border-radius: 30px;
-        transition: all 200ms ease;
-        box-shadow: rgba(255, 255, 255, 0.08) 0px 8px 8px 0;
-        cursor: pointer;
-      }
-      
-button:hover{
-background-color: #f09fc562;
-color: black;
-border: 1px solid #000000
-}
 
 footer {
   flex-shrink: 0; /* prevent footer from shrinking */
