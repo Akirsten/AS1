@@ -43,24 +43,25 @@ nav ul li a:hover {
  
 }
 
-
-
 footer {
   flex-shrink: 0; /* prevent footer from shrinking */
-  background: #f8f8f8;
+  background: #ffffff;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  
 }
 
 
 img {
-  float: left;
-    width: 450px; 
-    margin-right: 1200px;
-    margin-bottom: 1200px;
-    margin-top: 100px;
-    
+ 
+}
+
+p {
+  float: right;
+  width: 450px;
+  margin: 10px;
+  text-align: center;
+  
 }
 
 
