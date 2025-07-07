@@ -6,8 +6,34 @@ body {
   background: oklab(100% 0 -0.00011);
   color: #333;
   display: flex;
+  padding: 0;
   flex-direction: column;
   align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(-45deg, #e0f7fa, #e1bee7, #ffe0b2, #c8e6c9);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 nav {
