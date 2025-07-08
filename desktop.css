@@ -65,6 +65,11 @@ nav ul li a:hover {
   color: #666;
 }
 
+p{
+font-size: 19px;
+text-align: center;
+}
+
   button {
 
     border: none;
