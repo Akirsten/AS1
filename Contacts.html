@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <section aria-label="Contact Form Section">
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <fieldset>
+        <legend>Your Details</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="Subject" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
 </body>
 </html>
