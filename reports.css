@@ -95,3 +95,8 @@ section::before {
   margin: 0 auto 16px;
   border-radius: 2px;
 }
+footer {
+  flex-shrink: 0; 
+  text-align: center;
+  
+}

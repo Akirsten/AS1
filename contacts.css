@@ -51,6 +51,10 @@ footer {
   
 }
 
+button{
+    font-family: 'Raleway', sans-serif;
+}
+
 
 .contact-section form {
   display: flex;
@@ -113,5 +117,9 @@ footer {
 }
 
 
-
+footer {
+  flex-shrink: 0; 
+  text-align: center;
+  
+}
 
