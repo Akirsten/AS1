@@ -8,27 +8,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 nav {
   width: 100%;
   background: #ffffff;
-
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;  
-  padding: 0.5rem 80px;             
+  flex-direction: column;   /* stack nav items on mobile */
+  align-items: center;
+  padding: 0.5rem 1rem;
   margin: 0;
-  width: 100%;                     
+  width: 100%;
   box-sizing: border-box;
 }
 
 nav ul li {
- margin: 0 3rem;
+  margin: 0.7rem 0;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #555;
@@ -36,43 +38,29 @@ nav ul li a {
   padding: 0.25rem 0;
   transition: color 0.3s, border-bottom 0.3s;
   border-bottom: 2px solid transparent;
+  font-size: 1.1rem;
 }
 
 nav ul li a:hover {
   color: rgb(250, 83, 158);
- 
 }
-nav ul li a:hover {
-  color: rgb(250, 83, 158);
-  border-bottom: 2px solid #ff69b4;
-}
-
-footer {
-  flex-shrink: 0; 
-  background: #ffffff;
-  padding: 1rem;
-  text-align: center;
-  
-}
-
-button{
-    font-family: 'Raleway', sans-serif;
-}
-
 
 .contact-section form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 550px;
-  gap: 20px;
+  max-width: 100%;       /* full width on mobile */
+  gap: 1.2rem;
   margin: 2rem 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .contact-section label {
   font-weight: 600;
   margin-bottom: 6px;
   color: #333;
+  font-size: 1rem;
 }
 
 .contact-section input,
@@ -80,16 +68,18 @@ button{
   padding: 14px 18px;
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
-  border: 2px solid #ff69b4; 
+  border: 2px solid #ff69b4;
   border-radius: 12px;
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-section input:focus,
 .contact-section textarea:focus {
-  border-color: #ff1493; 
+  border-color: #ff1493;
   box-shadow: 0 0 10px rgba(255, 20, 147, 0.4);
   background-color: #fff8fb;
 }
@@ -110,8 +100,8 @@ button{
   box-shadow: 0 8px 25px rgba(255, 20, 147, 0.4);
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   align-self: center;
-  width: 50%;
-  max-width: 250px;
+  width: 80%;              /* wider button on mobile */
+  max-width: 300px;
 }
 
 .contact-section button:hover {
@@ -120,10 +110,42 @@ button{
   box-shadow: 0 12px 30px rgba(255, 20, 147, 0.6);
 }
 
-
 footer {
-  flex-shrink: 0; 
+  flex-shrink: 0;
   text-align: center;
-  
+  padding: 1rem 0;
+  color: #999;
+  font-size: 0.9rem;
+  background-color: #fff;
+  width: 100%;
 }
 
+/* Desktop styles from 800px up */
+@media (min-width: 800px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    margin: 0 3rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .contact-section form {
+    max-width: 550px;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .contact-section button {
+    width: 50%;
+    max-width: 250px;
+  }
+}

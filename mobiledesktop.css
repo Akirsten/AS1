@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+/* Base (Mobile-first) styles */
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -12,11 +14,11 @@ body {
 
 header {
   text-align: center;
-  padding: 2rem 1rem 0;
+  padding: 1.5rem 1rem 0;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #000000;
   margin: 0;
 }
@@ -29,15 +31,15 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 80px;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
   margin: 0;
   box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 3rem;
+  margin: 0.75rem 0;
 }
 
 nav ul li a {
@@ -55,33 +57,33 @@ nav ul li a:hover {
 }
 
 main {
+  width: 100%;
   max-width: 800px;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 
 main p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 1rem 0;
 }
 
 img {
-  max-width: 300px;
   width: 100%;
+  max-width: 300px;
   margin-top: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);
 }
 
-
 button {
   background: linear-gradient(90deg, #ff69b4, #ff1493);
   color: white;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Raleway', sans-serif;
-  padding: 16px 36px;
+  padding: 14px 28px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -102,28 +104,48 @@ footer {
   padding: 1rem;
   text-align: center;
   margin-top: auto;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #888;
 }
-
 
 .hamburger {
   display: none;
 }
 
+/* Desktop Enhancements (≥800px) */
+@media (min-width: 800px) {
+  header {
+    padding: 2rem 1rem 0;
+  }
 
-@media (max-width: 800px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
   nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 80px;
+    flex-wrap: wrap;
   }
 
   nav ul li {
-    margin: 1rem 0;
+    margin: 0 3rem;
   }
 
   main p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 16px 36px;
+  }
+
+  footer {
+    font-size: 0.9rem;
   }
 }
+
+
+
