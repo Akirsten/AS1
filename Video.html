@@ -2,10 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+<script src="hamburgertoggle.js" defer></script>
+<link rel="stylesheet" href="videomobile.css" media="screen and (max-width: 800px)">
+<link rel="stylesheet" href="video.css" media="screen and (min-width: 800px)">
 </head>
 <body>
-    
+    <input type="checkbox" id="nav-toggle" hidden>
+<label for="nav-toggle" class="hamburger"></label>
+
+    <header>
+        <a class="showNav" href="#"></a>
+        
+        <h1>Video Demonstration.</h1>
+    </header>
+    <nav>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contacts.html">Contact</a></li>
+            <li><a href="Video.html">Video</a></li>
+            <li><a href="Report.html">Report</a></li>
+        </ul>
+    </nav>
+    <section class="video-container">
+     <iframe width="640" height="360" src="https://www.youtube.com/embed/D2GvrWQopr8" title="Welcome To My Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <footer>
+        <p>&copy; Kirsten Abubakari 2025.</p>
+    </footer>
+    <script src="hamburgertoggle.js" defer></script>
 </body>
 </html>
